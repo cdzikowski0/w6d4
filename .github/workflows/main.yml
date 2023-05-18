@@ -22,4 +22,5 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run
         run: |
-         echo "{::return-value::{python main.py}"
+          python main.py
+         echo {"python main.py"}
